@@ -300,3 +300,58 @@ body {
   object-position: top;
   display: block;
 }
+
+/* ------------ Main ------------ */
+
+/* Description */
+
+.description {
+  width: 100%;
+  min-height: 313px;
+  background-image: var(--gradient-dark), url(./images/description-logo.png);
+  background-repeat: no-repeat;
+  background-size: auto;
+  background-position: right;
+  padding: 54px 102px 50px;
+}
+
+.description-header {
+  font-size: 30px;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-bottom: 33px;
+  color: #fff;
+}
+
+.description-paragraph {
+  max-width: 1148px;
+  color: #fff;
+  font-family: "Open Sans", sans-serif;
+  font-size: 15px;
+  margin-bottom: 26px;
+}
+
+.description-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 139px;
+  height: 32px;
+  font-size: 15px;
+  font-weight: 600;
+  color: #fff;
+  border-left: 2px solid #fff;
+  border-right: 2px solid #fff;
+  text-transform: uppercase;
+  transition: color 0.2s ease, border-left 0.2s ease, border-right 0.2s ease,
+    scale 0.2s ease;
+}
+
+.description-btn:hover {
+  color: var(--hover-dark);
+  border-left: none;
+  border-right: none;
+  transition: color 0.2s ease, border-left 0.2s ease, border-right 0.2s ease,
+    scale 0.2s ease;
+  scale: 1.1;
+}
