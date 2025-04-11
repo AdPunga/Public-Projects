@@ -355,3 +355,119 @@ body {
     scale 0.2s ease;
   scale: 1.1;
 }
+
+/* About */
+
+.about {
+  margin-bottom: 162px;
+}
+
+.about-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.about-section-heading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 404px;
+  height: 107px;
+  font-size: 30px;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 12px;
+  margin-top: 142px;
+  margin-bottom: 100px;
+  border: 8px solid black;
+}
+
+.about-section p {
+  font-family: "Open Sans", sans-serif;
+  text-align: center;
+  font-size: 15px;
+  max-width: 763px;
+  margin-bottom: 67px;
+}
+
+.about-me-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 139px;
+  height: 32px;
+  font-size: 15px;
+  font-weight: 600;
+  color: #000;
+  border-left: 2px solid #000;
+  border-right: 2px solid #000;
+  text-transform: uppercase;
+  margin-bottom: 85px;
+  transition: color 0.2s ease, border-top 0.2s ease, border-bottom 0.2s ease,
+    border-left 0.2s ease, border-right 0.2s ease, scale 0.2s ease;
+}
+
+.about-me-btn:hover {
+  color: var(--hover-dark);
+  border-left: none;
+  border-right: none;
+  transition: color 0.2s ease, border-left 0.2s ease, border-right 0.2s ease,
+    scale 0.2s ease;
+  scale: 1.1;
+}
+
+/* Services */
+
+.services {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 108px 0 80px 0;
+}
+
+.services-top,
+.services-bottom {
+  display: flex;
+}
+
+.services-top {
+  margin-bottom: 14px;
+  gap: 67px;
+}
+
+.service {
+  max-width: 487px;
+  min-height: 182px;
+}
+
+.design-service {
+  background: url(./images/services/design.png);
+}
+.development-service {
+  background: url(./images/services/development.png);
+}
+.maintenance-service {
+  background: url(./images/services/maintenance.png);
+}
+
+.service-header-container {
+  background-repeat: no-repeat;
+}
+
+.service-header {
+  font-size: 22px;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 1.8px;
+  padding: 26px 0;
+}
+
+.service-paragraph {
+  max-width: 422px;
+}
+
+.service-header,
+.service-paragraph {
+  margin-left: 40px;
+}
