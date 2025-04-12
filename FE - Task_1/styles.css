@@ -420,20 +420,26 @@ body {
 /* Services */
 
 .services {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-template-areas:
+    "box-1 box-1 box-2 box-2"
+    ". box-3 box-3 .";
+  gap: 14px 67px;
   margin: 108px 0 80px 0;
 }
 
-.services-top,
-.services-bottom {
-  display: flex;
+.box-1 {
+  grid-area: box-1;
 }
 
-.services-top {
-  margin-bottom: 14px;
-  gap: 67px;
+.box-2 {
+  grid-area: box-2;
+}
+
+.box-3 {
+  grid-area: box-3;
 }
 
 .service {
